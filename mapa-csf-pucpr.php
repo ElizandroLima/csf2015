@@ -1,33 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Ciências sem Fronteiras</title>
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/caroussel.css" rel="stylesheet">
-    <link href="css/font-stylesheet.css" rel="stylesheet">
-
-    
-    <link rel="stylesheet" type="text/css" href="css/tabs.css" />
-    <link rel="stylesheet" type="text/css" href="css/tabstyles.css" />
-
-    <script src="js/modernizr.custom.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/npm.js"></script>
-
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+<?php
+require('cab.php');
+?>
   <body>
     <div class="navbar-wrapper">
       <div class="container">
@@ -35,8 +8,6 @@
         <?php
         require('componentes/nav.php');
         ?>
-
-
 
         <div class="page-header">
           <h1>Mapa dos bolsistas Ciência sem Fronteiras</h1>
@@ -49,67 +20,14 @@
         </div>
         
 
-        <section>
-          <div class="tabs tabs-style-iconbox">
-
-                    <nav>
-                      <ul>
-                        <li>
-                          <a href="#section-iconbox-1">
-                            <input type=submit name=botao1  value=Todos style="background-color: none;"></input>
-                          </a>
-                        </li>
-
-                        <li>
-                          <a href="#section-iconbox-1">
-                            <input type=submit name=botao1  value=Todos></input>
-                          </a>
-                        </li>
-
-                        <li>
-                          <a href="#section-iconbox-1">
-                            <input type=submit name=botao1  value=Todos></input>
-                          </a>
-                        </li>
-
-                        <li>
-                          <a href="#section-iconbox-1">
-                            <input type=submit name=botao1  value=Todos></input>
-                          </a>
-                        </li> 
-
-                        <li>
-                          <a href="#section-iconbox-1">
-                            <input type=submit name=botao1  value=Todos></input>
-                          </a>
-                        </li>                     
-                      </ul>
-                    </nav>
-
-         
-            
+      	<?php
+        	require('index_students.php');
+        ?>
 
 
-            <div class="content-wrap">
-              <section id="section-iconbox-1">
-                <p>1</p>
-              </section>
-              <section id="section-iconbox-2"><p>2</p></section>
-              <section id="section-iconbox-3"><p>3</p></section>
-              <section id="section-iconbox-4"><p>4</p></section>
-              <section id="section-iconbox-5"><p>5</p></section>
-              <section id="section-iconbox-6"><p>6</p></section>
-            </div><!-- /content -->
-          </div><!-- /tabs -->
-      </section>
-
-
-      
-
-
-      <!-- FOOTER -->
-      <?php
-        require('componentes/footer.php');
+      	<!-- FOOTER -->
+      	<?php
+        	require('componentes/footer.php');
         ?>
 
     </div><!-- /.container -->
