@@ -8,7 +8,7 @@
 
 ?>
 <!--<body style="font-family: Arial;border: 0 none;">-->
-<div style="text-align: justify" align="center">
+<div style="text-align: justify">
 <?php 
 	$txt = msg("csf_mapa");
 	$txt = troca($txt,' 50 ',' '.$total.' '); 
@@ -24,14 +24,15 @@
 ?></div>
 <br/><br/>
 <!--Chama metodo que gera os mapas e tabela dinamicos -->
-<?php echo $csf->world_mapa_estudantes(); ?>
+	<center><?php echo $csf->world_mapa_estudantes(); ?></center>
 	
+	<!--
 	<div style="text-align: justify">
 		<BR><BR><center><h2><?=msg('est_no_ext');?></h2></center>
 	   	<div style="text-align: justify">
 	   		<?php echo msg("csf_mapa_foot"); ?>
 	   	</div>
 		<!--Chama metodo que gera a relacao dos alunos por curso e pais -->		
-		<?php echo $csf->lista_inscritos();?>
-	</div>
+		<!--<?php echo $csf->lista_inscritos();?></div>-->
+	
 	
