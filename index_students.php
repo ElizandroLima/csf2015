@@ -7,7 +7,7 @@
 	$totali = $csf->total_inscricoes();
 
 ?>
-<!--<body style="font-family: Arial;border: 0 none;">-->
+<body style="font-family: Arial;border: 0 none;">
 <div style="text-align: justify">
 <?php 
 	$txt = msg("csf_mapa");
