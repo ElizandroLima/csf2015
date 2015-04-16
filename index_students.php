@@ -8,7 +8,7 @@
 
 ?>
 <!--<body style="font-family: Arial;border: 0 none;">-->
-<div style="text-align: justify">
+<div style="text-align: justify" align="center">
 <?php 
 	$txt = msg("csf_mapa");
 	$txt = troca($txt,' 50 ',' '.$total.' '); 
@@ -22,7 +22,7 @@
 	echo '<center>'.$txt.'</center>';
 	echo '<BR><BR>';
 ?></div>
-
+<br/><br/>
 <!--Chama metodo que gera os mapas e tabela dinamicos -->
 <?php echo $csf->world_mapa_estudantes(); ?>
 	
